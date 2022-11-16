@@ -70,3 +70,17 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+// function getGryffindor(arrayValue) {
+
+//   return arrayValue;
+
+// }
+
+let gryffindorValues = hogwarts.filter((hogwart) => hogwart.house == "Gryffindor");
+
+for (let x of gryffindorValues) {
+  let { firstName, lastName } = x;
+  console.log(`${firstName} ${lastName}`);
+ }
+
