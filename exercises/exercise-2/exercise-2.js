@@ -77,6 +77,7 @@ let hogwarts = [
 
 // }
 
+// GRYFFINDOR NAMES --> TASK 1
 let gryffindorValues = hogwarts.filter((hogwart) => hogwart.house == "Gryffindor");
 
 for (let x of gryffindorValues) {
@@ -84,3 +85,11 @@ for (let x of gryffindorValues) {
   console.log(`${firstName} ${lastName}`);
  }
 
+
+//  TEACHERS w/ PETS --> TASK 2
+let teachersPets = hogwarts.filter((hogwart) => hogwart.occupation == "Teacher").filter(teacher => teacher.pet != null);
+
+for (let x of teachersPets) {
+  let { firstName, lastName } = x;
+  console.log(`${firstName} ${lastName}`);
+}
