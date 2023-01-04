@@ -15,6 +15,8 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+<!-- ANSWER -->
+<!-- Both the lines output differently because one is a global variable and the other is a local one within function f1 -->
 
 ## Question 2
 
@@ -32,6 +34,8 @@ function f1()
 console.log(f1())
 console.log(y)
 ```
+<!-- ANSWER -->
+<!-- The above code throws an error because y function f1 does not have a return value -->
 
 What will be the output of this code. Explain your answer in 50 words or less.
 
@@ -62,3 +66,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+<!-- ANSWER -->
+<!-- When compiled it retains the value of x=9 as x is a const. Whereas the value of y changes because it is associated with an object, whose internal values CAN be changed -->
